@@ -1,0 +1,20 @@
+.kachori{
+    border:1px solid brown;
+    border-radius:  100%;
+    height:400px;
+    width:400px;
+    background-color: brown;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px  50px 50px brown;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16N6-r3AfsjdBpUXekf8R3I7UfyqtzXILtEcG8sa_rA&s=10);
+    background-attachment:fixed;
+    background-repeat: repeat;
+    
+}
+p::first-letter{
+    color:green;
+}

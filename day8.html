@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Forms in html  -->
+    
+        <form>
+           
+            <fieldset>
+                  <div>
+    <h2>Request Form</h2>
+    <p> Please fill out the form below to submit your request</p>
+     </div>
+     <div>
+                <div>
+                <label >First Name</label>
+                <input type="text" placeholder="Enter your first name">
+                <label >Last Name</label>
+                <input type="text" placeholder="Enter you last name ">
+                </div>
+                <div>
+                    <label >Email Adderess</label><br>
+                    <input type="email" placeholder="Enter your email Address">
+                </div>
+                <div>
+                    <label >Phone Number</label><br>
+                    <input type="tel" placeholder="enter you phone number here" pattern="\+91 [0-9]{9}">
+                </div>
+                <div>
+                    <label >Request type</label><br>
+                  <select >
+                    <option value=""></option>
+                    <option >General inquiry</option>
+                    <option>change personal info.</option>
+                    <option>document verification</option>
+                  </select>
+                </div>
+                <div>
+                    <label >Request Details</label><br>
+                    <textarea  placeholder="Enter your request deatais"></textarea>
+                </div>
+                <div>
+                    <label >Attachments</label><br>
+                    <input type="file" placeholder="Choose file or drop here">
+                </div>
+                <div>
+                     <input type="checkbox" required>
+                    <label >I accept the terms and conditions</label>
+                </div>
+                <div>
+                    <button type="Submit">Submit Request</button>
+                </div>
+            </fieldset>
+        </form>
+     </div>
+</body>
+</html>
