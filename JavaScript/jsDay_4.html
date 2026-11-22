@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Ques. 1: Create a function that accepts the student array
+    const students = [
+        { name: "Rahul", marks: 85 },
+        { name: "Priya", marks: 32 },
+        { name: "Amit", marks: 67 },
+        { name: "Sneha", marks: 90 },
+        { name: "Kiran", marks: 28 }
+    ];
+
+    function Input(students) {
+        // Ques. 2: Use map() to add 5 as grace marks (capped at 100)
+        const grace = students.map(student => {
+            let marks = student.marks + 5;
+            if (marks > 100) {
+                marks = 100;
+            }
+            return {
+                ...student,
+                marks: marks
+            };
+        });
+        console.log(grace);
+        // use filter() to select students who scored at least 40 marks afetr adding grace marks
+        const filtered = grace.filter(student => student.marks>= 40);
+        console.log(filtered);
+        // use reduce() to calculate the average marks of the passing student
+          let sum = filtered.reduce((total,student) => total+student.marks,0 );
+          let avg = filtered.length >0 ? sum/filtered.length:0;
+       console.log(avg);
+       // use forEach() to display each passing student's name and final marks
+        filtered.forEach(num =>{
+          console.log(num);
+       });
+       // use an IIFE to display the final report
+          
+       return;
+    }
+
+    console.log(Input(students));
+</script>
+</body>
+</html>
